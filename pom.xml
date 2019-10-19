@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cn.metathought</groupId>
-  <artifactId>magicnum</artifactId>
+  <artifactId>paas-parent</artifactId>
   <packaging>pom</packaging>
   <version>1.0.0</version>
 
@@ -17,7 +17,7 @@
   </parent>
 
   <modules>
-    <module>eureka-server</module>
+    <module>paas-eureka</module>
     <module>wxgzh</module>
     <module>craw</module>
     <module>member-center</module>

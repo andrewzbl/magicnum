@@ -13,7 +13,7 @@
 
   <parent>
     <groupId>cn.metathought</groupId>
-    <artifactId>magicnum</artifactId>
+    <artifactId>paas-parent</artifactId>
     <version>1.0.0</version>
   </parent>
 

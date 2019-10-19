@@ -1,8 +1,0 @@
-server:
-  port: 9091
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
-    serviceUrl:
-      defaultZone: http://localhost:${server.port}/eureka/
