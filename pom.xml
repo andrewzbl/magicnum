@@ -18,9 +18,11 @@
 
   <modules>
     <module>paas-eureka</module>
+    <module>paas-config</module>
+    <module>paas-common</module>
+    <module>member-center</module>
     <module>wxgzh</module>
     <module>craw</module>
-    <module>member-center</module>
   </modules>
 
   <properties>
@@ -101,13 +103,6 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>repackage</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>

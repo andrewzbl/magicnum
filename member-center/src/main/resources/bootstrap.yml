@@ -1,3 +1,20 @@
 spring:
-  application:
-    name: eureka-client-membercenter
+  cloud:
+    config:
+      fail-fast: true
+      discovery:
+        service-id: paas-config
+        enabled: true
+      label: master
+      profile: ${spring.profiles.active}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@localhost:9090/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}

@@ -1,0 +1,29 @@
+encrypt:
+  key-store:
+    location: classpath:/server.jks
+    password: paascloud-storepass
+    alias: paascloud-key-store
+    secret: paascloud-keypass
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/andrewzbl/paas-config-repo.git
+          username:
+          password:
+          search-paths: /*
+      label: master
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://admin:admin@localhost:9090/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}

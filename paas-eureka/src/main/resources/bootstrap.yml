@@ -1,6 +1,6 @@
 eureka:
   server:
-    enable-self-preservation: false
+    enable-self-preservation: true
   instance:
     hostname: localhost
   client:

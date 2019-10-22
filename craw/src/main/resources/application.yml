@@ -1,6 +1,10 @@
 server:
   port: 8081
 spring:
+  application:
+    name: @pom.artifactId@
+  profiles:
+    active: dev
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
@@ -37,13 +41,3 @@ spring:
         stat:
           log-slow-sql: true
           slow-sql-millis: 1000
-  profiles:
-    active: dev
-eureka:
-  client:
-    healthcheck:
-      enabled: true
-    service-url:
-      defaultZone: http://admin:admin@localhost:9091/eureka/
-  instance:
-    prefer-ip-address: true
