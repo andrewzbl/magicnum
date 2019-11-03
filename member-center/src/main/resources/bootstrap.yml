@@ -6,6 +6,7 @@ spring:
         service-id: paas-config
         enabled: true
       label: master
+      name: member-center
       profile: ${spring.profiles.active}
 management:
   endpoints:
