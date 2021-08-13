@@ -18,7 +18,7 @@
     <ant.version>1.10.6</ant.version>
     <jedis.version>3.0.1</jedis.version>
     <codec.version>1.13</codec.version>
-    <bouncycastle.version>1.62</bouncycastle.version>
+    <bouncycastle.version>1.67</bouncycastle.version>
     <zxing.version>3.4.0</zxing.version>
   </properties>
 
